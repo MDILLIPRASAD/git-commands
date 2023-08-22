@@ -11,4 +11,4 @@ git merge                       --> it will merge the code which you fetch
 git checkout {branchname}       --> change branch to main/div/your feature branch
 git status                      --> show the status of the tree/project/dir
 git diff                        --> show the diiferences you made in the dir/project/file
-git something
+git something jkfdshuhfsge
