@@ -35,4 +35,112 @@ then - git commit -m '{message}'
 then - git push origin {yourbranchname}     //don't push to main 
 code pushed from local to remote/central repository
 
-git something jkfdshuhfsge
+git something
+Git commands in real-world projects:
+
+1. **git clone:**
+   **Explanation:** Clones a remote repository to create a local copy on your machine.
+   **Example:** Cloning a repository to your local machine:
+   ```bash
+   git clone https://github.com/username/repository.git
+   ```
+
+2. **git pull:**
+   **Explanation:** Fetches and merges changes from a remote repository into your local branch.
+   **Example:** Pulling changes from the remote 'main' branch into your local 'main' branch:
+   ```bash
+   git pull origin main
+   ```
+
+3. **git add:**
+   **Explanation:** Stages changes for commit. Adds changes to the staging area.
+   **Example:** Staging specific files:
+   ```bash
+   git add file1.js file2.css
+   ```
+
+4. **git commit:**
+   **Explanation:** Records staged changes and creates a new commit with a message.
+   **Example:** Committing staged changes with a descriptive message:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+
+5. **git push:**
+   **Explanation:** Pushes your local commits to a remote repository.
+   **Example:** Pushing your local 'main' branch to the remote 'main' branch:
+   ```bash
+   git push origin main
+   ```
+
+6. **git branch:**
+   **Explanation:** Lists, creates, or switches branches.
+   **Example:** Creating a new branch:
+   ```bash
+   git branch feature-branch
+   ```
+
+7. **git checkout:**
+   **Explanation:** Switches to a different branch or commit.
+   **Example:** Switching to an existing branch:
+   ```bash
+   git checkout feature-branch
+   ```
+
+8. **git merge:**
+   **Explanation:** Integrates changes from one branch into another.
+   **Example:** Merging 'feature-branch' into 'main' branch:
+   ```bash
+   git checkout main
+   git merge feature-branch
+   ```
+
+9. **git status:**
+   **Explanation:** Displays the status of your working directory and staged changes.
+   **Example:** Checking the status of your repository:
+   ```bash
+   git status
+   ```
+
+10. **git log:**
+    **Explanation:** Displays a history of commits.
+    **Example:** Viewing commit history:
+    ```bash
+    git log
+    ```
+
+11. **git remote:**
+    **Explanation:** Lists, adds, or manages remote repositories.
+    **Example:** Listing remote repositories:
+    ```bash
+    git remote -v
+    ```
+
+12. **git fetch:**
+    **Explanation:** Fetches changes from a remote repository without merging.
+    **Example:** Fetching changes from the remote repository:
+    ```bash
+    git fetch origin
+    ```
+
+13. **git reset:**
+    **Explanation:** Resets the state of the repository to a previous commit.
+    **Example:** Resetting to a previous commit:
+    ```bash
+    git reset --hard <commit_hash>
+    ```
+
+14. **git stash:**
+    **Explanation:** Temporarily saves changes in a "stash" to work on something else.
+    **Example:** Stashing changes before switching branches:
+    ```bash
+    git stash
+    ```
+
+15. **git cherry-pick:**
+    **Explanation:** Applies specific commits from one branch to another.
+    **Example:** Applying a commit from 'feature-branch' to 'main':
+    ```bash
+    git cherry-pick <commit_hash>
+    ```
+    ----------------------------------------------------------------------------------------
