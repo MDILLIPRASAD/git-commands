@@ -1,8 +1,8 @@
 Git Commands:
 ------------------------
-git checkout -b {branch name}   --> create branch for doing changes/your task
+git checkout -b {branch name}/git branch {branchname}   --> create branch for doing changes/your task
 git add {features}              --> add whatever features you did in files
-git commit -m '{message whatchanges you did}'      --> commit features in local(like save/deploy)
+git commit -m '{message whatchanges you did}'   --> commit features in local(like save/deploy)
 git push origin main/dev        --> to push to main origin(production ready)
 
 git pull origin dev             --> get pulled latest code and merge to your environment from remote to local
@@ -11,3 +11,27 @@ git merge                       --> it will merge the code which you fetch
 git checkout {branchname}       --> change branch to main/div/your feature branch
 git status                      --> show the status of the tree/project/dir
 git diff                        --> show the diiferences you made in the dir/project/file
+git branch                      --> it will show the branch name in which branch you currently in.
+git commit -a -m '{message}'    --> it will do simultaneously i.e, add and commit 
+
+(Q) diff b/n git fetch and git pull, when either is used?
+fetch is rarely used in real cases
+
+Git branches
+-----------------------------
+Git by default comes with 'main' branch
+No one should directly push changes to 'main'
+Github offers branch protection rule to restirct team members to directly push to main
+Create seperate branch for every new task(Don't include multiple tasks in one branch)-('stash' it if happens)
+
+Creating branch & pushing to created branch
+------------------------------------
+Before creating branch pull the latest code from git 
+create branch - git branch {branchname}
+change branch to newly created - git checkout {branchname}
+makes changes whatever you want to your code
+then - git add {filename}
+then - git commit -m '{message}'
+then - git push origin {yourbranchname}     //don't push to main 
+code pushed from local to remote/central repository
+
