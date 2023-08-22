@@ -1,1 +1,13 @@
 Git Commands:
+------------------------
+git checkout -b {branch name}   --> create branch for doing changes/your task
+git add {features}              --> add whatever features you did in files
+git commit -m '{message whatchanges you did}'      --> commit features in local(like save/deploy)
+git push origin main/dev        --> to push to main origin(production ready)
+
+git pull origin dev             --> get pulled latest code and merge to your environment from remote to local
+git fetch origin main           --> this command will fetch the details from remote without merging the code
+git merge                       --> it will merge the code which you fetch
+git checkout {branchname}       --> change branch to main/div/your feature branch
+git status                      --> show the status of the tree/project/dir
+git diff                        --> show the diiferences you made in the dir/project/file
