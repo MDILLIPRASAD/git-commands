@@ -14,6 +14,10 @@ Delete branch in the local       --> first check "git branch", you can't delete 
 git branch -d <branchname>       --> it delete branch which we are created after merged into main repo.
 git branch -D <branch-name>      --> force delete a branch, even if changes are not commited or merged we can delete a branch
 
+git checkout main  # Switch to the main branch
+git merge task1    # Merge the changes from task1 into main
+git branch -d task1  # Now you can safely delete the task1 branch
+
 git branch                       --> to list local branches
 git branch -r                    --> to list remote branches
 git branch -a                    --> to list local and remote branches
