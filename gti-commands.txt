@@ -31,6 +31,7 @@ git branch                       --> it will show the branch name in which branc
 git commit -a -m '<message>'     --> it will do simultaneously i.e, add and commit 
 git stash save -m '<message>'    --> place our task in temporary stash, we can work on another task and commit
 git stash pop                    --> this will get changes and out from stash, then you can work on it
+git stash list                   --> to list entries in stash, we can have any no. of tasks we can move to them
 
 (Q) diff b/n git fetch and git pull, when either is used?
 fetch is rarely used in real cases
