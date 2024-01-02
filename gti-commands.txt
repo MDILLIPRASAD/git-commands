@@ -163,3 +163,20 @@ Git commands in real-world projects:
     git cherry-pick <commit_hash>
     ```
     ----------------------------------------------------------------------------------------
+
+
+If you have deleted a branch and want to recover it, you can use the following command:
+```bash
+git reflog
+```
+This command shows you a log of all the recent Git actions, including branch deletions. You'll see a list of commits with associated messages. Find the commit where you deleted the branch and look for the commit hash.
+Then, recreate the branch using the commit hash:
+```bash
+git branch <branch-name> <commit-hash>
+```
+Replace `<branch-name>` with the name of the branch you want to recreate and `<commit-hash>` with the hash you obtained from the `git reflog` command.
+For example:
+```bash
+git branch my-recovered-branch abc1234
+```
+This will recreate the branch at the specified commit. If the branch had uncommitted changes, you might need to reset or stash changes accordingly.
