@@ -29,10 +29,17 @@ git status                       --> Show the status of the project directory.
 git diff                         --> Show differences in the project directory or files.
 git branch                       --> Show the current branch.
 git commit -a -m '<message>'     --> Add and commit changes simultaneously.
-git stash save -m '<message>'    --> Temporarily stash changes to work on another task before committing.
-git stash pop                    --> Apply changes from the stash and continue working.
-git stash list                   --> List entries in the stash.
 
+git stash save "message"          : This command saves your local changes to the stash with a descriptive message.
+git stash list                    : Lists all stashed changes.
+git stash show                    : Shows the changes in the most recent stash.
+git stash show -p                 : Shows the changes in the most recent stash in patch format.
+git stash apply                   : Applies the most recent stash to your working directory, leaving it in the stash list.
+git stash apply stash@{n}         : Applies a specific stash from the stash list.
+git stash pop                     : Applies the most recent stash to your working directory and removes it from the stash list.
+git stash drop                    : Deletes the most recent stash from the stash list.
+git stash clear                   : Removes all stashed changes from the stash list.
+git stash branch <branch_name>    : Creates a new branch from a specific stash.
 
 Git Branches
 ----------------------------------------------------
@@ -51,12 +58,10 @@ Add changes: git add <filename>
 Commit changes: git commit -m '<message>'
 Push changes to the created branch: git push origin <yourbranchname>
 
-
 (Q) Difference between git fetch and git pull, and when to use each?
 Fetch is rarely used in real-world cases. Git fetch retrieves the latest changes from a remote repository without merging them into your current branch, whereas git pull fetches the changes and automatically merges them into your current branch.
 Use git fetch when you want to see what changes have been made in the remote repository without integrating them into your local branch immediately. It's useful for reviewing changes before merging them.
 Use git pull when you want to both fetch the latest changes from the remote repository and merge them into your current branch. This is typically used when you want to update your local branch with the latest changes from the remote repository and incorporate them into your work.
-
 
 Git commands in real-world projects:
 -----------------------------------------------------
