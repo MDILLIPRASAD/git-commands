@@ -14,6 +14,14 @@ Delete Branch Locally              --> First, check "git branch". You can't dele
 git branch -d <branchname>         --> Delete a branch that has been merged into the main repository.
 git branch -D <branch-name>        --> Forcefully delete a branch, even if changes are not committed or merged.
 
+Rename the current branch:
+First, checkout to the branch you want to rename.
+Use the command 'git branch -m <new-branch-name>' to rename the current branch.
+
+Set upstream for the current branch:
+To set upstream for the current branch, use the command 'git push -u origin <current-branch-name>'.
+This way, you don't have to specify the branch name every time you use git push.
+
 git checkout main  # Switch to the main branch
 git merge task1    # Merge changes from task1 into main
 git branch -d task1  # Safely delete the task1 branch
