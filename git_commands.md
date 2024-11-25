@@ -27,16 +27,16 @@
 
 ## Git Stash Commands:
 
-- `git stash save "message"` --> This command saves your local changes to the stash with a descriptive message.
-- `git stash list`           --> Lists all stashed changes.
-- `git stash show`           --> Shows the changes in the most recent stash.
-- `git stash show -p`        --> Shows the changes in the most recent stash in patch format.
-- `git stash apply`          --> Applies the most recent stash to your working directory, leaving it in the stash list.
-- `git stash apply stash@{n}` --> Applies a specific stash from the stash list.
-- `git stash pop`             --> Applies the most recent stash to your working directory and removes it from the stash list.
-- `git stash drop`            --> Deletes the most recent stash from the stash list.
-- `git stash clear`           --> Removes all stashed changes from the stash list.
-- `git stash branch <branch_name>` --> Creates a new branch from a specific stash.
+- `git stash save "message"`                --> This command saves your local changes to the stash with a descriptive message.
+- `git stash list`                          --> Lists all stashed changes.
+- `git stash show`                          --> Shows the changes in the most recent stash.
+- `git stash show -p`                       --> Shows the changes in the most recent stash in patch format.
+- `git stash apply`                         --> Applies the most recent stash to your working directory, leaving it in the stash list.
+- `git stash apply stash@{n}`               --> Applies a specific stash from the stash list.
+- `git stash pop`                           --> Applies the most recent stash to your working directory and removes it from the stash list.
+- `git stash drop`                          --> Deletes the most recent stash from the stash list.
+- `git stash clear`                         --> Removes all stashed changes from the stash list.
+- `git stash branch <branch_name>`          --> Creates a new branch from a specific stash.
 
 **Recover Deleted Branches:**
 
