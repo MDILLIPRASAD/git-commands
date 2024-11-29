@@ -62,3 +62,23 @@ git branch recovered-branch abc1234
 2. **Avoid Pushing to `main/dev`**: Use pull requests for merging.
 3. **Name Branches Clearly**: Use concise, descriptive names like `feature-login-page` or `fix-auth-bug`.
 4. **Review Before Merging**: Ensure code is reviewed and tested.
+5. 
+
+
+To reset your working directory and discard all changes (including untracked files), you can run the following commands:
+
+1. **Reset to the latest commit**:
+
+```bash
+git reset --hard
+```
+This will reset your working directory and the index (staging area) to the most recent commit, discarding all changes that haven't been committed.
+
+2. **Remove untracked files** (like `.next/`, `.vscode/`, `node_modules/`):
+
+```bash
+git clean -fd
+```
+This will remove all untracked files and directories from your working directory. Be careful with this command as it will permanently delete untracked files.
+
+After that, your repository should be cleaned up and reset to the latest commit. Let me know if you need any more help!
